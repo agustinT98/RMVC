@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf8">
+        <title> RMV&C </title>
+        	
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt; >
+        <script src="./JS/Final.js"></script> 
+        <link href="./CSS/Final.css" rel="stylesheet" type="text/css">
+    
+    </head> 
+    <body>
+        <div class="Form">
+       <h1 id="Titulo">Bienvenido <br> a <br> RMV&C</h1> 
+        <form onsubmit=" return validaP()" method="post" action="loginfinal.php">
+           <h2 id="form2"><b>Usuario</b></h2> 
+            
+           <input id="usuario" type="text" name="nombre" placeholder="  Ingrese su nombre de usuario  " minlength="6" maxlength="10" required pattern="[A-Za-z0-9]+" />   
+           <input id="ayuda" type="button"  onmouseover="alert('El usuario debe contener entre 6 y 10 caracteres, conformados por Digitos, Mayusculas o Minusculas.')" value=" ? " />          
+           <h2 id="form2"> <b>Contraseña </b></h2> 
+            <input id="clave" type="password" name="pass" placeholder="  Ingrese su contraseña  " minlength="8" maxlength="8" required pattern="[A-Z]*[a-z]*[0-9]*" />
+            <input id="ayuda" type="button" onmouseover="alert('La contraseña debe contener 8 caracteres, conformados por Digitos, Mayusculas y Minusculas.')" value="?" />
+            <input  id="botones" type="submit" value="Enviar"> <br><br>
+            <input id="botones" type="reset" value="Borrar"> <br><br>
+
+            <a href="#">¿Olvido su contraseña?</a>
+           </form>
+        </div>
+        
+    </body> 
+</html> 
